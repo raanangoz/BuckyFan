@@ -15,10 +15,11 @@
       float: left;
       border-right: 1px solid #ccc;
       text-align: center;
+      
 
     }
 
     li a:hover {
       background-color: yellow;
       color: green;
- 
+	}
