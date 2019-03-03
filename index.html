@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <style>
+    nav {}
+
+    nav ul {}
+
+    nav ul li {
+      width: 150px;
+      float: left;
+      border-right: 1px solid #ccc;
+      text-align: center;
+
+    }
+
+    li a:hover {
+      background-color: yellow;
+      color: green;
+  </style>
+  <nav>
+    <ul>
+      <div id="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+
+      </div>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <br />
+    <br />
+    TODO:
+    <br/>
+    did i really add playlist
+    <br />
+    delete black dots on navigation bar.
+    <br />
+    navigation bar hides text 
+    <br />
+    icons on navigation bar,
+    <br />
+    youtube link
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    about me
+    <br />
+
+    <br />
+    My name is Bucky Roberts.
+    <br />
+    I manage the "thenewboston" channel on YouTube.
+    <br />
+    If you visit this website, you have probably seen some of my awesomeee videos.
+    <br />
+    Or maybe somebody recommended you to visit my website, in order to learn programming.
+    <br />
+    I really like to teach programming.
+    <br />
+    programming is a very big olam tochen, and I think that in this era, everybody should try to get into it,
+    <br />
+    just as everybody has some basic knowledge on medicine, mathematics, etc..
+    <br />
+    The Artificial Intelligence domain is what I want to focus soon.
+    <br />
+    I am also experiment on Databases.
+    <br />
+    Networking and Networking Security are also some of the best interests in my opinion.
+    <br/>
+    I spend a few hours a week creating and uploading videos, along a full-time job.
+    <br />
+    And the most important thing is that I really like tuna. 
+    <br />
+    On every video where I can use tuna as an example to something, I will use it.
+    <br />
+I recommend you to start watching my Web Development online videos, which are easy to follow, and are and easy and a fun way to start at.
+<br />
+My expectations are that you will practice and try to do a website by yourself, and not only to  watch my awesome videos.
+<br />
+In a few weeks, you might have a website of your own! Without the need to take a course at the university and pass an exhausting exam.
+<br />
+    Besides programming, I like running, watching TV, playing on the computer, and eating - mainly tuna.
+    <br />
+  </section>
+
+  <section id="photos" class="section">
+  
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    
+    <br />
+    my photos
+    
+    <br />
+    <br />
+    <br />
+    <img src = "Bucky1.jpg" height = 210 width = 210 />
+    <img src = "Bucky2.jpg" height = 210 width = 210 />
+    </br>
+    <img src = "Bucky3.jpg" height = 210 width = 210 />
+    <img src = "Bucky4.jpg" height = 210 width = 210 />
+  </section>
+
+  <section id="playlist" class="section">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    my playlist
+    <br />
+    <br />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL6gx4Cwl9DGBI2ZFuyZOl5Q7sptR7PwYN" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PYrCS21sPbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/>
+  </section>
+
+  <section id="like" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    give me a like
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="qrcoder" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    scan my code
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="spa" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    ans
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <section id="contact" class="section">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    contact me
+    <br />
+    <br />
+    <br />
+  </section>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash);
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).scroll(function () {
+      $('#menu').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+</body>
+
+</html>
