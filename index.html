@@ -3,13 +3,58 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+  
+
+myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+  
+  </style>
+
 </head>
+
+
+
 
 <body>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
   <nav>
     <ul>
-      <div id="menu">
+      <div class = "menu">
         <li><a href="#about">About Me</a></li>
         <li><a href="#photos">My Photos</a></li>
         <li><a href="#playlist">My Playlist</a></li>
@@ -22,27 +67,19 @@
     </ul>
   </nav>
 
+
   <section id="about" class="section">
+  
+      
     <br />
-    <br />
-    TODO:
-    <br/>
-    did i really add playlist
-    <br />
-    delete black dots on navigation bar.
-    <br />
-    navigation bar hides text 
-    <br />
-    icons on navigation bar,
-    <br />
-    youtube link
+
 
     <br />
     <br />
     <br />
     <br />
     <br />
-    about me
+    <h2> about</h2>
     <br />
 
     <br />
@@ -65,43 +102,46 @@
     I am also experiment on Databases.
     <br />
     Networking and Networking Security are also some of the best interests in my opinion.
-    <br/>
+    <br />
     I spend a few hours a week creating and uploading videos, along a full-time job.
     <br />
-    And the most important thing is that I really like tuna. 
+    And the most important thing is that I really like tuna.
     <br />
     On every video where I can use tuna as an example to something, I will use it.
     <br />
-I recommend you to start watching my Web Development online videos, which are easy to follow, and are and easy and a fun way to start at.
-<br />
-My expectations are that you will practice and try to do a website by yourself, and not only to  watch my awesome videos.
-<br />
-In a few weeks, you might have a website of your own! Without the need to take a course at the university and pass an exhausting exam.
-<br />
+    I recommend you to start watching my Web Development online videos, which are easy to follow, and are and easy and a
+    fun way to start at.
+    <br />
+    My expectations are that you will practice and try to do a website by yourself, and not only to watch my awesome
+    videos.
+    <br />
+    In a few weeks, you might have a website of your own! Without the need to take a course at the university and pass
+    an exhausting exam.
+    <br />
     Besides programming, I like running, watching TV, playing on the computer, and eating - mainly tuna.
     <br />
   </section>
 
   <section id="photos" class="section">
-  
+
     <br />
     <br />
     <br />
     <br />
     <br />
-    
-    
+
+
     <br />
-    my photos
-    
+    <h2 align="center">my photos</h2>
+
     <br />
     <br />
     <br />
-    <img src = "Bucky1.jpg" height = 210 width = 210 />
-    <img src = "Bucky2.jpg" height = 210 width = 210 />
+    <img src="Bucky1.jpg" height=210 width=210 />
+    <img src="Bucky2.jpg" height=210 width=210 />
     </br>
-    <img src = "Bucky3.jpg" height = 210 width = 210 />
-    <img src = "Bucky4.jpg" height = 210 width = 210 />
+    <img src="Bucky3.jpg" height=210 width=210 />
+    <img src="Bucky4.jpg" height=210 width=210 />
   </section>
 
   <section id="playlist" class="section">
@@ -113,10 +153,13 @@ In a few weeks, you might have a website of your own! Without the need to take a
     <br />
     <br />
     <br />
-    my playlist
+	<h2 align="center">my playlist</h2>
+    
     <br />
     <br />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL6gx4Cwl9DGBI2ZFuyZOl5Q7sptR7PwYN" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/videoseries?list=PL6gx4Cwl9DGBI2ZFuyZOl5Q7sptR7PwYN" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br />
   </section>
 
@@ -124,25 +167,16 @@ In a few weeks, you might have a website of your own! Without the need to take a
     <br />
     <br />
     <br />
+	<h2 align="center">Like me!   
+	
+    
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    give me a like
-    <br />
-    <br />
-    <br />
-    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fraanangoz.github.io%2FInternet-Programming-Environments%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-  
+   
+    <iframe
+      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fraanangoz.github.io%2FInternet-Programming-Environments%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId"
+      width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+      allowTransparency="true" allow="encrypted-media"></iframe>
+</h2>
   </section>
 
   <section id="qrcoder" class="section">
@@ -162,13 +196,16 @@ In a few weeks, you might have a website of your own! Without the need to take a
     <br />
     <br />
     <br />
-    scan my code
+	<h2 align="center">scan my code</h2>
+    
     <br />
     <br />
     <br />
+    <img src="frame.png"  height=250 width=250   />
   </section>
 
   <section id="spa" class="section">
+
     <br />
     <br />
     <br />
@@ -178,41 +215,61 @@ In a few weeks, you might have a website of your own! Without the need to take a
     <br />
     <br />
     <br />
+ 
     <br />
+
+    <h2 align="center">Q&A</h2>
+	Question:
+	<br>
+	
+Explain 3 main differences between web1, web2 and web3? 
+<br>
+Answer:
+<br>
+Web 1.0:
+As for the client - this is " read only ". Low interactions between the user and the site's owners. 
+<br> 
+The user can only recieve information from the website but can not add anything to it, can not communicate with anyone else, and can not change it by any way.
+<br>
+Web 2.0 
+<br>
+There are interactions between different users. Users are recommended to interact with each other in order to enjoy, to learn, and to maximize their web-surfing experience.
+<br>
+Web applications allow users to interact easily with themselves and with the server.
+<br>
+Web 3.0 
+<br>
+AI algorithms are used in order to learn the user's habits, and recommend specific relevant contents to him.
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    ans
-    <br />
+	Sites can interpret information like people, create and show information for their needs.
     <br />
     <br />
   </section>
 
   <section id="contact" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    contact me
-    <br />
-    <br />
-    <br />
-  </section>
+  <h2>Contact me (Bucky's fan)</h2>
+<form method="post" action="mailto:raanango@post.bgu.ac.il" enctype="text/plain">
+  <input type="text" name="name" placeholder="What's your name?" size = 50px>
+  <br/>
+  <br/>
+  <input type="email" name="email" placeholder="what's your Email Address?" size = 50px>
+  <br/>
+  <br/>  
+  <textarea rows=6 cols = 50px name="message" placeholder="Write your message here"></textarea>
+  <br/>
+  <br/>
+
+
+  <button  type="submit">send</button>
+</form>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+</section>
+
 
 
   <script type="text/javascript">
@@ -228,6 +285,7 @@ In a few weeks, you might have a website of your own! Without the need to take a
       $('#menu').toggle($(this).scrollTop() > 1000)
     });​
   </script>
-</body>
 
+</body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </html>
